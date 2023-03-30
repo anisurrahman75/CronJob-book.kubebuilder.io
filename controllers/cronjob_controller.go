@@ -423,7 +423,6 @@ func (r *CronJobReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ct
 		// TODO(directxman12): events
 		return scheduledResult, nil
 	}
-
 	/*
 		If we actually have to run a job, we'll need to either wait till existing ones finish,
 		replace the existing ones, or just add new ones.  If our information is out of date due
